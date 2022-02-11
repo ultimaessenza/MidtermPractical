@@ -3,7 +3,7 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
-# User-specific files
+# User-specific files [>>Checked for *suo]
 *.rsuser
 *.suo
 *.user
@@ -33,7 +33,8 @@ bld/
 [Ll]og/
 [Ll]ogs/
 
-# Visual Studio 2015/2017 cache/options directory
+# Visual Studio 2015/2017 cache/options directory [>>Checked for .vs, added /UnitTester/Defines.h]
+/UnitTester/Defines.h
 .vs/
 # Uncomment if you have tasks that create the project's static files in wwwroot
 #wwwroot/
@@ -101,7 +102,7 @@ StyleCopReport.xml
 # Chutzpah Test files
 _Chutzpah*
 
-# Visual C++ cache files
+# Visual C++ cache files [>>Checked for *.sdf, *.opensdf, *.opendb]
 ipch/
 *.aps
 *.ncb
@@ -109,7 +110,8 @@ ipch/
 *.opensdf
 *.sdf
 *.cachefile
-*.VC.db
+#*.VC.db [This was originally in the .gitignore]
+*.db
 *.VC.VC.opendb
 
 # Visual Studio profiler
@@ -361,3 +363,7 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Added this line as per requirement of the Midterm Practical
+*.exe
+!CreateMain.exe
